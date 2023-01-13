@@ -9,7 +9,7 @@ from modules.my_filters import UserEditing, UserSearching, UserAddingContactInfo
 
 
 def main():
-    updater = Updater(token="5915257629:AAHO_JjTNP5HpLD_QizLeK7vxFB-oM6Kcy4", use_context=True)
+    updater = Updater(token="INSERT_TOKEN_HERE", use_context=True)
     dispatcher = updater.dispatcher
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                         level=logging.INFO)
