@@ -202,7 +202,7 @@ def kbhandler(update, context):
                             message_id=update.callback_query.message.message_id,
                             text="Ciao! Se vuoi saperne di più sul bot leggi il mio discorso agli utenti:\n"
                                  "<a href=\"https://telegra.ph/FAQ-01-12-9#Un-discorso-agli-utenti\">"
-                                 "Clicca qui per aprire la pagina web!</a></i>",
+                                 "Clicca qui per aprire la pagina web!</a>",
                             parse_mode="HTML",
                             disable_web_page_preview=True,
                             reply_markup=back_from_book_kb()
