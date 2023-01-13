@@ -152,8 +152,11 @@ def kbhandler(update, context):
             ujson.dump(database, open("db.json", "w"))
         if split[2] == "search":
             database = ujson.load(open("db.json", "r"))
-            database["users"][str(update.effective_chat.id)]["status"] = False
-            ujson.dump(database, open("db.json", "w"))
+            try:
+                database["users"][str(update.effective_chat.id)]["status"] = False
+                ujson.dump(database, open("db.json", "w"))
+            except KeyError:
+                pass
         bot.editMessageText(chat_id=update.effective_chat.id, message_id=update.callback_query.message.message_id,
                             text="Usa i bottoni di sotto per navigare nel menù ⬇️",
                             reply_markup=menu_kb())
