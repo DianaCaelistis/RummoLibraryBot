@@ -7,7 +7,7 @@ def menu_kb():
     kb1 = InlineKeyboardButton("📚 I miei libri", callback_data="my_books")
     kb2 = InlineKeyboardButton("🔎 Cerca libri", callback_data="search_books")
     kb3 = InlineKeyboardButton("👥 Le mie informazioni", callback_data="edit_contact_info")
-    kb4 = InlineKeyboardButton("ℹ️ Informazioni sullo sviluppo", callback_data="info")
+    kb4 = InlineKeyboardButton("ℹ️ Informazioni sul bot", callback_data="info")
     return InlineKeyboardMarkup([[kb0, kb1], [kb2], [kb3], [kb4]])
 
 
